@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Study_Recorder",
+    "version": "1.1",
+    "permissions": [
+      "history",
+      "storage",
+      "unlimitedStorage",
+      "downloads",
+      "browser_action"
+    ],
+    "background":{
+      "scripts":["review_history.js"],
+      "persistent": true
+    },
+    "browser_action":{
+      "default_popup":"popup.html"
+    }
+}
+  
