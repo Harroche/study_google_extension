@@ -49,5 +49,6 @@ function invert(){
     historyArr.length=0;
     historyArr.push("     TIME      :	LINK");
   }
+  console.log(running);
 }
 

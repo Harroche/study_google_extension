@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded",function(){
 
 genSwitch.addEventListener("change",function(){
     const isChecked = genSwitch.checked;
+    const colouredText=document.getElementById("recording");
+    colouredText.style.color= (isChecked)? "red":"white";
     chrome.storage.sync.set({ isChecked: isChecked });
     chrome.runtime.sendMessage({ action: "invert"});
 });
+

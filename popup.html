@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
         <title>download</title>
     </head>
     <body>
-        <h1>downloads</h1>
-        <input type="checkbox" id="historySwitch">
-        <label for="historySwitch">on or off</label>
+        <h2>Study Recorder</h2>
+        <p id="recording">Recording</p>
+        <label class="switch" for="historySwitch">
+            <input type="checkbox" id="historySwitch">
+            <span class="slider round"></span>
+        </label>
         <br>
         <button id="generateButton">generate file</button>
         <script src="popup.js"></script>
