@@ -12,6 +12,10 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     const blob = new Blob([historyArr.join("\n"+"\n")],{ type: 'plain/text'});
     reader.onload = function(event){
       const dataUrl = event.target.result;
+      const link = document.createElement('a');
+      link.href=dataUrl;
+      link.download="download link";
+      link.click();
       console.log(dataUrl);
     };
     console.log(reader.readAsDataURL(blob)+ " thing");
