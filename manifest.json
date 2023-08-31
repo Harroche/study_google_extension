@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Study_Recorder",
-    "version": "1.4",
+    "version": "1.5",
     "permissions": [
       "history",
       "storage",
@@ -14,7 +14,10 @@
       "persistent": true
     },
     "browser_action":{
-      "default_popup":"popup.html"
+      "default_popup":"popup.html",
+      "default_icon":{
+        "128":"Floppy Disk 2.png"
+      }
     }
 }
   

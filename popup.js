@@ -23,10 +23,11 @@ genSwitch.addEventListener("change",function(){
     colouredText.style.color= (isChecked)? "red":"white";
     (isChecked)? saveColour("red"):saveColour("white");
     chrome.storage.sync.set({ isChecked: isChecked });
-    chrome.runtime.sendMessage({ action: "invert"});
+    (isChecked)? chrome.runtime.sendMessage({ action: "record"}) : chrome.runtime.sendMessage({ action: "nonRecord"});
 });
 
 function saveColour(colour){
     chrome.storage.sync.set({"colorPresence":colour});
 }
+
 
