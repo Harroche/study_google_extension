@@ -22,7 +22,8 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         const dataUrl = event.target.result;
         const link = document.createElement('a');
         link.href=dataUrl;
-        link.download="download link";
+        const date = new Date();
+        link.download="Recorded links "+date.toDateString().slice(4)+".txt";
         link.click();
         console.log(dataUrl);
       };
