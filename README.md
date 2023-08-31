@@ -8,7 +8,7 @@ Set up:
 4. Know extract the foulder where you stored the code via "load unpacked"
 
 Running of extension:
-1. click on the extension on the button on the top right (the puzzle piece)
-2. then click into Study_Recorder 
+1. Click on the extension on the button on the top right (the puzzle piece)
+2. Then click into Study_Recorder 
 3. To start recording the data active the box
 4. To then download the data click on the genrate file button 
