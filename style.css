@@ -1,6 +1,25 @@
+/* body{
+    background-color: grey;
+} */
+
 p{
     color: white;
+    margin-top: -10px;
+    font-weight: bold;
 }
+
+h2{
+    white-space: nowrap;
+}
+
+.fileButton{
+    margin-top: 10px;
+    border: 2px solid #000000;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
 
 .switch {
     position: relative;

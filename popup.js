@@ -8,7 +8,7 @@ chrome.storage.sync.get("colorPresence",function(data){
 });
 
 chrome.storage.sync.get("isChecked",function(data){
-    genSwitch.checked = data.isChecked;
+    genSwitch.checked = data.isChecked !== undefined ? data.isChecked : false;
 });
 
 document.addEventListener("DOMContentLoaded",function(){
