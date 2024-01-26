@@ -1,10 +1,19 @@
 const historyArr =["     TIME      :	LINK"];
 let running = false;
+var currentDate = new Date();
+var day = currentDate.getDate();
+var monthNames = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December'
+];
+var month = monthNames[currentDate.getMonth()];
+var year = currentDate.getFullYear();
 
+var formattedDate = day + ' ' + month + ' ' + year;
 //adds visted urls to string array
 chrome.history.onVisited.addListener(function(history){
   if(running)  
-    historyArr.push(dateString()+"\t\t"+history.url);
+    historyArr.push(dateString()+"\t\tAvailable at: "+history.url + "  (Accessed "+ formattedDate +")");
 });
 
 
