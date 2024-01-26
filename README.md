@@ -1,5 +1,5 @@
 # Study Google Extension
-A google chrome extension that records your browser history. Basically in the future can track back what links you were researching while also being in haravad referencing style. 
+A google chrome extension that records your browser history. Allows the ability to track back what links you were researching while also being in Harvard referencing style. 
 
 **Set up:**
 1. Download code locally
